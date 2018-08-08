@@ -37,8 +37,6 @@ namespace Core.Test.Model
             [TestCase()]
             public void ValidateConsoleOutput()
             {
-
-
                 using (StringWriter sw = new StringWriter())
                 {
                     Console.SetOut(sw);

@@ -1,26 +1,20 @@
 ﻿@model dynamic
 
 @{
-    ViewBag.Title = "Generador de pruebas con cadenas de rango";
+    ViewBag.Title = "string characters test generator";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-
-@*<input class="btn btn-primary" type="button" value="Generate">*@
-
-<h2>Generador de pruebas con cadenas de caracteres</h2>
+<h2>string characters test generator</h2>
 
 <form class="px-4 py-3">
-    @*<div class="form-group">
-        <label for="exampleDropdownFormEmail1">Input</label>
-        <input type="text" class="form-control" id="input1" placeholder="xx">
-    </div>
-    <div class="form-group">
-        <label for="exampleDropdownFormPassword1">Input</label>
-        <input type="text" class="form-control" id="input2" placeholder="xx">
-    </div>*@
-    <textarea id="textarea1" placeholder=" [#,#] ]#,#] [#,#[ " style="margin: 0px; width: 279px; height: 144px;"></textarea>
+    <input id="cadena" type="text" name="cadena" class="form-control" style="text-transform: uppercase" placeholder="[#,#]">
+    <br/>
+    <input id="cadena1" type="text" name="cadena1" class="form-control" style="text-transform: uppercase" placeholder="]#,#]">
+    <br/>
+    <input id="cadena2" type="text" name="cadena2" class="form-control" style="text-transform: uppercase" placeholder="[#,#[">
 
-    <button type="submit" class="btn btn-primary" onclick="location.href='@Url.Action("Ranges", "ControllerName")'" >Generate</button>
+    @*<textarea id="textarea1" placeholder=" [#,#] ]#,#] [#,#[ " style="margin: 0px; width: 279px; height: 144px;"></textarea>*@
+    <br />
+    <button type="submit" class="btn btn-primary" onclick="location.href='@Url.Action("Ranges", "ControllerName")'">TEST</button>
 </form>
-

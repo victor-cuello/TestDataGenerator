@@ -1,24 +1,35 @@
 ﻿@model dynamic
 
 @{
-    ViewBag.Title = "Generador de pruebas con cadenas de caracteres";
+    ViewBag.Title = "string characters test generator";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<h2>string characters test generator</h2>
+<form class="px-4 py-3">
 
-@*<input class="btn btn-primary" type="button" value="Generate">*@
-<h2>Generador de pruebas con cadenas de caracteres</h2>
-    <form class="px-4 py-3">
+    <div class="col-sm-12">
         <div class="form-group">
-            <label for="exampleDropdownFormEmail1">Input</label>
+            <label for="exampleDropdownFormEmail1">Initial Range</label>
             <input type="text" class="form-control" id="input1" placeholder="xx">
         </div>
+    </div>
+
+    <div class="col-sm-12">
         <div class="form-group">
-            <label for="exampleDropdownFormPassword1">Input</label>
+            <label for="exampleDropdownFormPassword1">Final Range</label>
             <input type="text" class="form-control" id="input2" placeholder="xx">
-
-            <textarea id="textarea1" style="margin: 0px; width: 279px; height: 144px;"></textarea>
-
         </div>
-        <button type="submit" class="btn btn-primary">Generate</button>
-    </form>
+    </div>
+
+    <div class="col-sm-12">
+        <div class="input-group">
+            <label for="exampleDropdownFormPassword1">Results</label><br />
+            <textarea id="textarea1" style="margin: 0px; width: 279px; height: 144px;"></textarea>
+        </div>
+    </div>
+
+    <div class="col-sm-12">
+        <button type="submit" class="btn btn-primary">TEST</button>        
+    </div>    
+</form>
